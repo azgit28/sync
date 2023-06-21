@@ -1,0 +1,179 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: white;
+}
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 66;
+    background: rgba(0, 0, 7, 0.9);
+    color: white;
+    position: sticky;
+    top: 0;
+    
+}
+.hero {
+    z-index: 33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    background: linear-gradient(to top, rgba(0, 0, 7, 0.9)50%, rgba(1, 1, 15, 0.9)50%), url(images/buy-and-sell.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 70vh;
+    width: 100%;
+    color: white;
+    text-align: center;
+}
+.hero a {
+    text-decoration: none;
+    color: black;
+}
+.hero h1 {
+    font-family:'Silika', sans-serif ;
+    font-size:40px ;
+    font-weight: 600;
+    /* margin: 10px 0; */
+    color: white;
+}
+.hero h2 {
+    font-family:'Silika', sans-serif ;
+    font-size:24px ;
+    font-weight: 600;
+    margin: 10px 0;
+    color: grey;
+    text-align: center;
+}
+
+
+.cw {
+   background-color: white;
+   padding: 10px;
+   font-family: acumin-pro;
+   font-size: 20px;
+   font-weight: 800px;
+   border: 1px white solid;
+   border-radius: 20px 0;
+}
+.second h1 {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+.cards {
+    display: grid;
+    place-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    gap: 50px;
+  
+    
+    /* height: 50%; */
+    /* border: 1px solid white; */
+}
+.cards1 {
+    background-color: rgb(16, 16, 46);
+    border: 1px solid white;
+    padding: 20px 0;
+    height:100% ;
+    
+    /* max-height: 550px; */
+    /* border-radius: 10px; */
+
+}
+.cards1 .fa {
+    font-size: 3rem;
+}
+#arr {
+    font-size: 1rem !important;
+
+}
+.cards1 h1 {
+    font-family:'Silika', sans-serif ;
+        font-size:24px ;
+        font-weight: 600;
+        margin: 10px 0;
+        color: grey;
+
+}
+.cards1 h2{
+    font-family:'Silika', sans-serif ;
+        font-size:16px ;
+        font-weight: 400;
+        margin-top: 10px 0;
+
+}
+.cards a {
+    font-family:'Silika', sans-serif ;
+    font-size:16px ;
+    font-weight: 400;
+    background-color: white;
+    text-decoration: none;
+    border: 1px solid blue;
+    border-radius: 10px 0;
+    position: relative;
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+    border: 1px solid blue;
+    border-radius: 10px 0;
+    margin: 10px 0;
+
+}
+.sicons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 20px 0;
+}
+.footer {
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 20px;
+    color: rgba(0, 0, 7, 0.9);
+    font-family: "Silka", Sans-serif;
+    font-size: 8px;
+    font-weight: 400;
+    /* background-color: gray; */
+    padding: 10px;
+    border-radius: 20px;
+    max-width: 100%;
+
+}
+@media(max-width:426px){
+    .hero h1 {
+        font-family:'Silika', sans-serif ;
+        font-size:14px ;
+        font-weight: 600;
+        /* margin: 10px 0; */
+        color: white;
+    }
+    .hero h2 {
+        display: none;
+    }
+    .cards {
+        display: grid;
+        place-items: center;
+        grid-template-columns: 1fr;
+        color: white;
+        text-align: center;
+        gap: 50px;
+        
+        /* height: 50%; */
+        /* border: 1px solid white; */
+    }
+
+    
+    
+}

